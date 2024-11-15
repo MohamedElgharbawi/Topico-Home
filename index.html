@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="shortcut icon" type="image/x-icon" href="imgs/image e-commrce/img/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+    <a href="#" class="to-Top position-fixed overflow-hidden"><i class="fa-solid fa-arrow-up"></i></a>
+    <header class="position-fixed">
+        <div class="container d-flex justify-content-between align-items-center">   
+            <div class="logo">
+                <a href="https://mohamedelgharbawi.github.io/Topico-Home/"><img src="imgs/image e-commrce/img/logo-black.png" alt="logo-black"></a>
+            </div>
+                <form action="" class="search position-relative">
+                    <input type="search" placeholder="Search For Products...">
+                    <button type="submit" class="position-absolute">Search</button>
+                </form>
+            <div class="cart-header d-flex align-items-center">
+                <div class="icon-cart position-relative d-flex justify-content-center align-items-center" onclick="addActive();set_bg_active()">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="count-items position-absolute d-flex justify-content-center align-items-center">0</span>
+                </div>
+                <div class="total-price">
+                    <p>My Cart : <span class="final-price">$0</span></p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container d-flex justify-content-between align-items-center">
+            <i class="fa-solid fa-bars"></i>
+            <nav>
+                <div class="img_with_icon d-flex align-items-center justify-content-between d-none">
+                    <a href="https://mohamedelgharbawi.github.io/Topico-Home/"><img src="imgs/image e-commrce/img/logo-black.png" alt=""></a>
+                    <i class="fa-solid fa-circle-xmark"></i>
+                </div>
+                <ul class="d-flex justify-content-center align-items-center">
+                    <li class="active"><a href="https://mohamedelgharbawi.github.io/Topico-Home/">Home</a></li>
+                    <li><a href="https://mohamedelgharbawi.github.io/Topico-Allproducts/">All Products</a></li>
+                    <li><a href="https://mohamedelgharbawi.github.io/Topico-Item/">ITem</a></li>
+                    <li><a href="https://mohamedelgharbawi.github.io/Topico-Checkout/">Checkout</a></li>
+                </ul>
+            </nav>
+            <span></span>
+            <div class="login_sign-up d-flex align-items-center">
+                <a href="https://mohamedelgharbawi.github.io/Topico-Login/">login<i class="fa-solid fa-right-to-bracket ms-2"></i></a>
+                <a href="https://mohamedelgharbawi.github.io/Topico-Sign-up/">sign-up<i class="fa-solid fa-user-plus ms-2"></i></a>
+            </div>
+        </div>
+    </header>
+    <div class="bg" onclick="remove_bg_active();removeActive()"></div>
+    <div class="my-cart position-fixed d-flex flex-column justify-content-between p-3">
+        <div class="head d-flex justify-content-between align-items-center pb-3">
+            <p class="m-0"><span>My Item </span><span class="Span_Two">(0 Item In Cart)</span></p>
+            <i class="fa-solid fa-circle-xmark" onclick="removeActive();remove_bg_active()"></i>
+        </div>
+        <div class="body py-3 position-relative overflow-auto">
+            
+        </div>
+        <div class="foot pt-3">
+            <p class="d-flex justify-content-between">Cart subtotal <span class="final-price">$0</span></p>
+            <button class="mb-2 checkout">proceed to checkout</button>
+            <button>shop more</button>
+        </div>
+    </div>
+    <section class="side-bar">
+        <div class="container d-flex justify-content-between">
+            <div class="side_bar">
+                <h2><i class="fa-solid fa-bars"></i>Shop By Department</h2>
+                    <a href="#">All Categories</a>
+                    <a href="#">Best Seller Products</a>
+                    <a href="#">New Arrivals</a>
+                    <a href="#">Top 10 Offers</a>
+                    <a href="#">Phones & Tablets</a>
+                    <a href="#">Electronics & Digita</a>
+                    <a href="#">Fashion & Clothings</a>
+                    <a href="#">Jewelry & Watches</a>
+                    <a href="#">Tv & Audio</a>
+            </div>
+            <div class="slide-swp mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><a href="#"><img src="imgs/image e-commrce/img/slider-01.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="imgs/image e-commrce/img/slider-02.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="imgs/image e-commrce/img/slider-03.jpg" alt=""></a></div>
+                </div>
+                <!-- <div class="swiper-pagination swiper-pagination-sidebar"></div> -->
+            </div>
+        </div>
+    </section>
+    <section class="features py-2 my-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="item d-flex align-items-center">
+                <img src="imgs/image e-commrce/img/features1.png" alt="">
+                <div class="text">
+                    <h4>Free Shipping</h4>
+                    <p>Free Shipping On All Order</p>
+                </div>
+            </div>
+            <div class="item d-flex align-items-center">
+                <img src="imgs/image e-commrce/img/features2.png" alt="">
+                <div class="text">
+                    <h4>Free Shipping</h4>
+                    <p>Free Shipping On All Order</p>
+                </div>
+            </div>
+            <div class="item d-flex align-items-center">
+                <img src="imgs/image e-commrce/img/features3.png" alt="">
+                <div class="text">
+                    <h4>Free Shipping</h4>
+                    <p>Free Shipping On All Order</p>
+                </div>
+            </div>
+            <div class="item d-flex align-items-center">
+                <img src="imgs/image e-commrce/img/features4.png" alt="">
+                <div class="text">
+                    <h4>Free Shipping</h4>
+                    <p>Free Shipping On All Order</p>
+                </div>
+            </div>
+            <div class="item d-flex align-items-center">
+                <img src="imgs/image e-commrce/img/features5.png" alt="">
+                <div class="text">
+                    <h4>Free Shipping</h4>
+                    <p>Free Shipping On All Order</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="banner">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="banner_img">
+                    <a href="#"></a>
+                    <div class="glass_hover"></div>
+                    <img src="imgs/image e-commrce/img/banner/banner-1.jpg" alt="">
+            </div>
+            <div class="banner_img">
+                    <a href="#"></a>
+                    <div class="glass_hover"></div>
+                    <img src="imgs/image e-commrce/img/banner/banner-2.jpg" alt="">
+            </div>
+            <div class="banner_img">
+                    <a href="#"></a>
+                    <div class="glass_hover"></div>
+                    <img src="imgs/image e-commrce/img/banner/banner-3.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="slide slide-sale">
+        <div class="container">
+            <div class="sale-sec mySwiper overflow-hidden position-relative">
+                <div class="swiper-button-next btn-Swip position-absolute fw-bold"></div>
+                <div class="swiper-button-prev btn-Swip position-absolute fw-bold"></div>
+                <div class="top-slide">
+                    <h2 class="position-relative fw-bold mb-0 text-capitalize">on sale <span class="fw-normal">product</span></h2>
+                </div>
+                <div id="TheProducts" class="products py-4 swiper-wrapper position-relative mt-5"></div>
+                    <!-- <div class="swiper-button-next btn-Swip position-absolute fw-bold"></div>
+                    <div class="swiper-button-prev btn-Swip position-absolute fw-bold"></div> -->
+            </div>
+        </div>
+    </section>
+    <section class="banner banner-big my-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="banner_img">
+                <a href="#"></a>
+                <div class="glass_hover"></div>
+                <img src="imgs/image e-commrce/img/banner/banner-4.jpg" alt="">
+            </div>
+            <div class="banner_img">
+                <a href="#"></a>
+                <div class="glass_hover"></div>
+                <img src="imgs/image e-commrce/img/banner/banner-5.jpg" alt="">
+            </div>
+        </div>
+    </section> 
+    <section class="slide slide-sale">
+        <div class="container position-relative">
+            <div class="swiper-button-next btn-Swip position-absolute fw-bold"></div>
+            <div class="swiper-button-prev btn-Swip position-absolute fw-bold"></div>
+            <div class="top-slide">
+                    <h2 class="position-relative fw-bold mb-0 text-capitalize">Computer & Desktop<span class="fw-normal"> Products</span></h2>
+            </div>
+            <div class="contain d-flex align-items-center">
+                <div class="categ_img">
+                    <a href="#"><img src="imgs/image e-commrce/img/banner/banner-sm-1.jpg" alt=""></a>
+                </div>
+                <div class="sale-sec mySwiper overflow-hidden position-relative py-5">
+                    <div class="products py-4 swiper-wrapper position-relative align-items-center" id="other_product_swiper"></div>
+                    <!-- <div class="swiper-button-next btn-Swip position-absolute fw-bold"></div>
+                    <div class="swiper-button-prev btn-Swip position-absolute fw-bold"></div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="slide slide-sale">
+        <div class="container position-relative">
+            <div class="swiper-button-next btn-Swip position-absolute fw-bold"></div>
+            <div class="swiper-button-prev btn-Swip position-absolute fw-bold"></div>
+            <div class="top-slide">
+                    <h2 class="position-relative fw-bold mb-0 text-capitalize">Computer & Desktop<span class="fw-normal"> Products</span></h2>
+            </div>
+            <div class="contain d-flex align-items-center">
+                <div class="sale-sec mySwiper overflow-hidden position-relative py-5">
+                    <div class="products py-4 swiper-wrapper position-relative align-items-center" id="other_product_swiper2"></div>
+                    <!-- <div class="swiper-button-next btn-Swip position-absolute fw-bold"></div>
+                    <div class="swiper-button-prev btn-Swip position-absolute fw-bold"></div> -->
+                </div>
+                <div class="categ_img">
+                    <a href="#"><img src="imgs/image e-commrce/img/banner/banner-sm-2.jpg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="banner mb-5" style="margin-top: 0">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="banner_img">
+                <a href="#"></a>
+                <div class="glass_hover"></div>
+                <img src="imgs/image e-commrce/img/banner/banner-6.jpg" alt="">
+            </div>
+            <div class="banner_img">
+                <a href="#"></a>
+                <div class="glass_hover"></div>
+                <img src="imgs/image e-commrce/img/banner/banner-7.jpg" alt="">
+            </div>
+            <div class="banner_img">
+                <a href="#"></a>
+                <div class="glass_hover"></div>
+                <img src="imgs/image e-commrce/img/banner/banner-8.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="news-letter">
+        <div class="container d-flex align-items-center justify-content-between py-5">
+            <div class="text d-flex align-items-center">
+                <div class="image">
+                    <img src="imgs/image e-commrce/img/icon_email.png" alt="">
+                </div>
+                <div class="content">
+                    <h4>Sign Up To NewsLetter</h4>
+                    <p class="my-2">Get Email Updates About Our Lastest Shop....And Receive</p>
+                    <h6 class="fw-normal">$30 Coupon For First Shopping</h6>
+                </div>
+            </div>
+            <form action="" class="news-letter-form position-relative">
+                <input class="px-3 py-2" type="email" placeholder="Enter Your Email Here...">
+                <button type="submit" class="position-absolute px-2">Subscribe</button>
+            </form>
+        </div>
+    </section>
+    <footer class="mt-5 ">
+        <div class="container d-flex align-items-center justify-content-between py-4">
+            <div class="first-row Row">
+                <a href="https://mohamedelgharbawi.github.io/Topico-Home/"><img src="imgs/image e-commrce/img/logo-white.png" alt=""></a>
+                <div class="content d-flex align-items-center my-3">
+                    <i class="fa-solid fa-headset"></i>
+                    <div class="text">
+                        <h5>Hot Line Free 24/24:</h5>
+                        <h6 class="mb-0">(+100) 123 456 7890</h6>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, mollitia!</p>
+            </div>
+            <div class="second-row Row">
+                <h5 class="mb-2">FAGS & Help</h5>
+                <ul class="m-0 p-0">
+                    <li><a href="#">F.A.G.S</a></li>
+                    <li><a href="#">Ordering Tracking</a></li>
+                    <li><a href="#">Contacts</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Help Center</a></li>
+                </ul>
+            </div>
+            <div class="third-row Row">
+                <h5 class="mb-2">Shipping & Delivery</h5>
+                <ul class="m-0 p-0">
+                    <li><a href="#">Delivery Information</a></li>
+                    <li><a href="#">Discount</a></li>
+                    <li><a href="#">Payment & Shipping</a></li>
+                    <li><a href="#">Estimated Delivery Time</a></li>
+                    <li><a href="#">Shipping Guide</a></li>
+                </ul>
+            </div>
+            <div class="fourth-row Row">
+                <h5 class="mb-2">Information</h5>
+                <ul class="m-0 p-0">
+                    <li><a href="#">Popular</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Your Account</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Condition</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="bottom-footer py-2">
+            <div class="container mt-4 d-flex align-items-center justify-content-between">
+                    <p>Copyright &copy; <span class="fw-bold">Topico.</span> All Rights Reserved <span class="date"></span></p>
+                    <div class="payment-img">
+                        <img src="imgs/image e-commrce/img/payment-1.png" alt="">
+                        <img src="imgs/image e-commrce/img/payment-2.png" alt="">
+                        <img src="imgs/image e-commrce/img/payment-3.png" alt="">
+                        <img src="imgs/image e-commrce/img/payment-4.png" alt="">
+                    </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
